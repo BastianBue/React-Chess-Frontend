@@ -1,0 +1,257 @@
+body {
+  margin: 0;
+  overflow-y: hidden;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-image: url("./images/chess.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.body {
+  background-image: url("./images/chess.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.starting-page {
+  display: flex;
+}
+.selectable:hover {
+  color: #61dafb;
+}
+
+.app {
+  margin-top: auto;
+}
+
+@media all and (orientation: landscape) {
+  .starting-page-body {
+    height: 100vh;
+    width: 70vw;
+  }
+  .starting-page-select {
+    height: 100vh;
+    width: 30vw;
+    background-color: #20232a;
+    color: #61dafb;
+    text-align: center;
+  }
+
+  .board {
+    height: 80vh;
+    width: 80vh;
+    margin: 10vh auto;
+    background-color: rgb(53, 52, 52);
+    display: grid;
+    grid-template-columns: repeat(8, 10vh);
+    grid-template-rows: repeat(8, 10vh);
+    border: 3px solid grey;
+  }
+  .field {
+    height: 10vh;
+    width: 10vh;
+    position: relative;
+  }
+}
+@media all and (orientation: portrait) {
+  .starting-page-body {
+    height: 100vh;
+    width: 0vw;
+  }
+  .starting-page-select {
+    height: 100vh;
+    width: 100vw;
+    background-color: #20232a;
+    color: #61dafb;
+    text-align: center;
+  }
+
+  .board {
+    height: 80vw;
+    width: 80vw;
+    margin: 10vw auto;
+    background-color: rgb(53, 52, 52);
+    display: grid;
+    grid-template-columns: repeat(8, 10vw);
+    grid-template-rows: repeat(8, 10vw);
+    border: 3px solid grey;
+  }
+
+  .field {
+    height: 10vw;
+    width: 10vw;
+    position: relative;
+  }
+  .field-id {
+    visibility: hidden;
+  }
+}
+
+.field-id {
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  margin: 0;
+  font-size: 12px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+@media screen and (max-width: 600px) {
+  .field-id {
+    font-size: 8px;
+  }
+}
+
+.white-pawn::after {
+  margin: auto;
+  margin-top: 10%;
+  width: 80%;
+  height: 80%;
+  display: block;
+  content: "";
+  background-image: url("./images/pieces/whitePawn.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.black-pawn::after {
+  margin: auto;
+  margin-top: 10%;
+  width: 80%;
+  height: 80%;
+  display: block;
+  content: "";
+  background-image: url("./images/pieces/blackPawn.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.white-rook::after {
+  margin: auto;
+  margin-top: 10%;
+  width: 80%;
+  height: 80%;
+  display: block;
+  content: "";
+  background-image: url("./images/pieces/whiteRook.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.black-rook::after {
+  margin: auto;
+  margin-top: 10%;
+  width: 80%;
+  height: 80%;
+  display: block;
+  content: "";
+  background-image: url("./images/pieces/blackRook.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.white-knight::after {
+  margin: auto;
+  margin-top: 10%;
+  width: 80%;
+  height: 80%;
+  display: block;
+  content: "";
+  background-image: url("./images/pieces/whiteKnight.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.black-knight::after {
+  margin: auto;
+  margin-top: 10%;
+  width: 80%;
+  height: 80%;
+  display: block;
+  content: "";
+  background-image: url("./images/pieces/blackKnight.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.white-bishop::after {
+  margin: auto;
+  margin-top: 10%;
+  width: 80%;
+  height: 80%;
+  display: block;
+  content: "";
+  background-image: url("./images/pieces/whiteBishop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.black-bishop::after {
+  margin: auto;
+  margin-top: 10%;
+  width: 80%;
+  height: 80%;
+  display: block;
+  content: "";
+  background-image: url("./images/pieces/blackBishop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.white-queen::after {
+  margin: auto;
+  margin-top: 10%;
+  width: 80%;
+  height: 80%;
+  display: block;
+  content: "";
+  background-image: url("./images/pieces/whiteQueen.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.black-queen::after {
+  margin: auto;
+  margin-top: 10%;
+  width: 80%;
+  height: 80%;
+  display: block;
+  content: "";
+  background-image: url("./images/pieces/blackQueen.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.white-king::after {
+  margin: auto;
+  margin-top: 10%;
+  width: 80%;
+  height: 80%;
+  display: block;
+  content: "";
+  background-image: url("./images/pieces/whiteKing.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.black-king::after {
+  margin: auto;
+  margin-top: 10%;
+  width: 80%;
+  height: 80%;
+  display: block;
+  content: "";
+  background-image: url("./images/pieces/blackKing.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.available {
+  background-color: green !important;
+}
+
+.hitable {
+  background-color: red !important;
+}
+
+.input {
+  width: 250px;
+  border-radius: 5px;
+  background: #fff;
+  border: 1px solid #ccc;
+  outline: none;
+  padding: 6px;
+}
+
+.input:focus {
+  border: 1px solid #56b4ef;
+  box-shadow: 0px 0px 3px 1px #c8def0;
+}
