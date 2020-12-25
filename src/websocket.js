@@ -1,7 +1,7 @@
 import { w3cwebsocket as W3CWebSocket } from "websocket";
 
 /* const client = new W3CWebSocket("ws://localhost:8080"); */
-const client = new W3CWebSocket("wss://dry-bastion-35878.herokuapp.com");
+const client = new W3CWebSocket("ws://dry-bastion-35878.herokuapp.com");
 
 client.onopen = () => {
   console.log("client connected");
